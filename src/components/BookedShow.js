@@ -9,7 +9,7 @@ export default function BookedShow() {
   const email = localStorage.getItem("email");
   
   useEffect(() => {
-    // Retrieve series names from local storage
+
     const storedSeriesNames = JSON.parse(localStorage.getItem('series-names')) || [];
     setSeriesNames(storedSeriesNames);
   }, []);

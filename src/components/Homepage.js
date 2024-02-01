@@ -40,7 +40,7 @@ export default function App() {
                     <Link to={`/shows/${show.show.id}`} className="">
                       <img
                         src={show.show?.image?.medium}
-                        className="w-32"
+                        className="w-32 bg-slate-600"
                         alt={show.show.name}
                         loading="lazy"
                       />

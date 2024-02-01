@@ -23,7 +23,7 @@ export default function ShowsPage() {
           <img
             src={showById?.show?.image?.original}
             alt={showById?.show?.name}
-            className="w-[300px] mx-auto"
+            className="w-[300px] mx-auto bg-slate-600"
           />
 
           <h3 className="text-2xl  font-semibold">{showById?.show?.name}</h3>

@@ -42,7 +42,7 @@ export default function BookShowPage() {
             <img
               src={showById?.show?.image?.medium}
               alt={showById?.show?.name}
-              className=" mx-auto"
+              className=" mx-auto bg-slate-600"
             />
             <div className="mt-5 italic text-slate-700 flex gap-2">
               <p className="font-semibold">Series Name:</p>
