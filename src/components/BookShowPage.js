@@ -14,6 +14,15 @@ export default function BookShowPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const existingSeriesNames = JSON.parse(localStorage.getItem("series-names")) || [];
+
+    existingSeriesNames.push(showById?.show?.name);
+
+
+    localStorage.setItem("username", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("series-names", JSON.stringify(existingSeriesNames));
+
     alert("Sucessfully booked!!")
     navigate("/")
   }

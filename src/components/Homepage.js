@@ -21,7 +21,16 @@ export default function App() {
   return (
     <div className="max-w-[1024px] mx-auto font-mono">
       <div className="mx-2 my-5">
-        <h1 className="text-4xl flex justify-center">TV Shows</h1>
+        <div className="flex justify-between">
+          <h1 className="text-4xl flex justify-center grow">TV Shows</h1>
+          <Link
+          to="/BookedShow"
+          className="self-center text-lg font-semibold hover:text-yellow-500"
+          >
+            BookedShow
+          </Link>
+        </div>
+
         <ul>
           {shows.map((show) => (
             <li key={show.show.id}>
@@ -59,8 +68,9 @@ export default function App() {
                       </Link>
                     </div>
                   </div>
-                  <Link to={`/BookShow/${show.show.id}`}
-                  className="self-center"
+                  <Link
+                    to={`/BookShow/${show.show.id}`}
+                    className="self-center"
                   >
                     <button className=" hover:cursor-pointer hover:text-blue-500">
                       Book Ticket{" >"}
